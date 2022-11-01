@@ -4,6 +4,8 @@ import GoogleLogin from "react-google-login";
 export default function Signin() {
   const responseGoogle = (res: any) => {
     console.log(res);
+    alert(JSON.stringify(res));
+    localStorage.setItem("res", res);
   };
 
   return (
